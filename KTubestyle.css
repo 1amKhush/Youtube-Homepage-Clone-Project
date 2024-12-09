@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.logo_name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #050504;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #b1c5ef;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* .sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ddd;
+} */
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* .video {
+    margin-bottom: 20px;
+}
+
+.video img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.video {
+  flex-direction: column;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.video img {
+  width: 100%;
+  height: auto;
+}
+
+.video-details {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  gap: 10px;
+}
+
+.channel-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* margin-right: 8px;
+  flex-shrink: 0; */
+}
+
+/* .video-text {
+  flex-grow: 1;
+  text-align: justify;
+} */
+
+.video-text h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.video-text p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .video {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .video {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
